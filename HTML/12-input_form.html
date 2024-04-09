@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Form</title>
+</head>
+<body>
+  <h1>Contact Form</h1>
+
+  <form action="/submit-your-data" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+    <br><br>
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate">
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password">
+    <br><br>
+    <label for="bio">Bio:</label>
+    <textarea name="bio" id="bio"></textarea>
+    <br><br>
+    <label for="relationship">Relationship Status</label>
+    <select id="relationship">
+      <option value="Married">Married</option>
+      <option value="Single">Single</option>
+      <option value="Other">Other</option>
+    </select>
+    <br><br>
+    <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+    <label for="subscribe">Subscribe to newsletter</label>
+    <br><br>
+    <input type="radio" id="member_yes" name="member" value="yes">
+    <label for="member_yes">Yes</label>
+    <input type="radio" id="member_no" name="member" value="no">
+    <label for="member_no">No</label>
+    <label>Are you a member?</label>
+    <br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
