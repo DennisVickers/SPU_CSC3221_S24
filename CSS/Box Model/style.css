@@ -1,0 +1,22 @@
+/*
+ * Box Model
+ */
+ 
+img {
+  max-width: 40%;
+  height: auto;
+}
+
+section {
+  width: 75%;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  border: solid 3px #777;
+}
+
+/* box-sizing property */
+* {
+  box-sizing: border-box;
+  /* box-sizing: content-box; */
+}

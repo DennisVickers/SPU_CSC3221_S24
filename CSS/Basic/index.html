@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic CSS</title>
+  <style>
+    li {
+      color: blue;
+    }
+    #lorem {
+      text-indent: 30px;
+    }
+    .footnote {
+      text-decoration: underline;
+    }
+    #footnote-1 {
+      color: orange;
+      font-style: italic;
+    }
+
+  </style>
+  <!-- <link rel="stylesheet" href="basic.css"> -->
+</head>
+<body>
+  <section>
+  <h2 style="color:goldenrod; text-align: center;">Facts about CSS</h2>
+  <div id="lorem";>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit placeat ratione consequatur delectus, totam nulla dolores temporibus quam corporis, autem corrupti incidunt illo quasi similique nostrum asperiores sapiente porro eveniet rem maxime voluptatibus. Quisquam sed odio iusto impedit non cum, porro voluptatum ratione nisi ipsum tempora dolore vitae. Obcaecati dicta cupiditate, porro, vitae deleniti autem commodi voluptas voluptate ipsum, itaque fuga numquam consectetur non cumque perferendis reiciendis. Nulla quibusdam dolor nam impedit temporibus assumenda repellendus.</p>
+  </div>
+   <ul type="square">
+      <li>According to Wikipedia, CSS was first proposed by Håkon Wium Lie on October 10, 1994. 
+         <a href="#footnote-1">[1]</a></li>
+      <li>The first W3C CSS Recommendation (CSS1) was released in 1996.</li>
+      <li>CSS was selected over competing stylesheet technologies because CSS <cite>allowed a document's 
+         style to be influenced by multiple stylesheets by way of "cascading".</cite> 
+         <a href="#footnote-1">[1]</a></li>
+      <li>Four years passed from when CSS1 was released before any browser fully supported CSS1.
+         <a href="#footnote-2">[2]</a></li>
+   </ul>
+   <p id="footnote-1" class="footnote">
+      [1] <a href="https://en.wikipedia.org/wiki/CSS#History" target="_blank">
+      Cascading Style Sheets history</a>. Retrieved March 31, 2022.
+   </p>
+   <p id="footnote-2" class="footnote">
+      [2] <a href="https://en.wikipedia.org/wiki/CSS#Difficulty_with_adoption" target="_blank">
+      Difficulty with Adoption</a>.  Retrieved March 31, 2022.
+  </p>
+</section>
+</body>
+</html>

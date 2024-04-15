@@ -1,0 +1,21 @@
+/*
+ * Sizing
+ */
+ 
+/* fixed sizing */
+#fixed-size-box {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* fluid sizing */
+#fluid-size-box {
+  width: 50%;
+  height: 50vh;
+  border: .0625rem solid black;
+  padding: .625em;
+  margin: .625em;
+}

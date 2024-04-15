@@ -1,0 +1,59 @@
+/*
+Descendent: ' '
+Child: '>'
+General sibling: '~'
+Adjacent sibling: '+'
+*/
+
+body {
+  background-color: aqua;
+}
+
+header {
+  text-align: center;
+}
+
+header h2 {
+  color: blue;
+}
+
+header h3 {
+  font-style: italic;
+}
+
+/* Child of identifier */
+#introduction > p {
+  background-color: yellowgreen;
+}
+
+/* Class descendent of identifier */
+#research .section_head~section {
+  background-color: darkgrey;
+}
+
+/* Adjacent sibling of identifier */
+#s1+section {
+  font-style: italic;
+}
+
+/* Child of Disclosure element in open state */
+details[open] > summary {
+  background-color: lightgray;
+}
+
+/* Pseudo element of class */
+.section_head::first-line {
+  font-size: 1.5rem;
+  color: black;
+  text-transform: capitalize;
+}
+
+/* Pseudo class */
+#conclusion ul>li:nth-child(odd) {
+  font-style: italic;
+}
+
+/* Pseudo class */
+li:hover {
+  color: blue;
+}
