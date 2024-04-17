@@ -1,0 +1,75 @@
+/*
+ * Flex layout
+ */
+ 
+* {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header {
+  background: purple;
+  height: 7rem;
+}
+
+h1, h2 {
+  text-align: center;
+  color: white;
+  line-height: 3rem;
+  margin: 0;
+}
+
+h2>a {
+  color: white;
+}
+
+article {
+  padding: .625rem;
+  margin: .625rem;
+  background: aqua;
+}
+
+section {
+  display: flex;
+  /* direction of main and cross axis */
+  flex-direction: row;  
+  flex-wrap:nowrap;
+  /* flex-flow:row wrap; */
+}
+
+article {
+  /* How much space a flex element will take in the container
+     as it grows or shrinks */
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* The initial size of the flex element */
+  flex-basis: 12.5rem;
+}
+
+article h2 {
+  color: black;
+}
+
+#article_3 {
+  display: flex;
+  flex-grow: 3;
+  flex-flow: column;
+}
+
+article_3 div:first-child {
+  display: flex;
+  flex-basis: 6.25rem;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button {
+  flex-basis: auto;
+  flex-grow: 1;
+  margin: .31rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}

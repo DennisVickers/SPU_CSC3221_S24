@@ -1,0 +1,53 @@
+div {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: lightgray;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+/* Static position */
+#static-box {
+  position: static;
+  background-color: blue;
+  top: 200px;
+}
+
+/* Relative position */
+#relative-box {
+  position: relative;
+  left: 50px;
+  background-color: lightgreen;
+}
+
+/* Absolute position */
+#absolute-box {
+  position: absolute;
+  left: 250px;
+  background-color: red;
+}
+
+/* Fixed position */
+#fixed-box {
+  position: fixed;
+  top: 40px;
+  left: 250px;
+  background-color: purple;
+}
+
+/* Sticky position */
+#sticky-box {
+  position: sticky;
+  background-color: orange;
+}
+
+/* force a scroll */
+.content {
+  height: 2000px;
+}
