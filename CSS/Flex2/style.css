@@ -1,32 +1,17 @@
-/*
- * Flex layout
- */
- 
-* {
-  font-family: sans-serif;
+:root {
   margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .625rem;
 }
 
 header {
+  height: 4rem;
   background: purple;
-  height: 7rem;
-}
-
-h1, h2 {
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  color: white;
   text-align: center;
-  color: white;
-  line-height: 3rem;
-  margin: 0;
-}
-
-h2>a {
-  color: white;
-}
-
-article {
-  padding: .625rem;
-  margin: .625rem;
-  background: aqua;
 }
 
 section {
@@ -38,16 +23,26 @@ section {
 }
 
 article {
-  /* How much space a flex element will take in the container
-     as it grows or shrinks */
-  flex-grow: 1;
-  flex-shrink: 1;
-  /* The initial size of the flex element */
-  flex-basis: 12.5rem;
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: aqua;
 }
 
-article h2 {
+article > h2 {
   color: black;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+article {
+  /* The initial size of the flex element */
+  flex-basis: 12.5rem;
+  /* How much space a flex element will take in the container as it grows or shrinks */
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 #article_3 {
@@ -56,7 +51,7 @@ article h2 {
   flex-flow: column;
 }
 
-article_3 div:first-child {
+#article_3 > div:first-child {
   display: flex;
   flex-basis: 6.25rem;
   flex-grow: 1;
