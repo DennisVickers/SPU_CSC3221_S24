@@ -1,0 +1,46 @@
+/* Basic styles for navigation */
+.navigation {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+
+  .menu.active {
+      display: flex;
+  }
+}

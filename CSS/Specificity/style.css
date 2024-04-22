@@ -1,0 +1,20 @@
+/* Element selector */
+body {
+  color: white;
+  font-weight: bold;
+}
+
+p {    /* Low specificity (0,0,0,1) */
+  color: blue;
+}
+
+/* Class selector */
+.text {
+  color: green; /* Higher specificity than element selector (0,0,1,0) */
+}
+
+/* ID and class selector */
+#container .text {
+  color: yellow;   /* Even higher specificity (0,1,1,0) */
+}
+
