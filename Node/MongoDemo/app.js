@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 // Data model (schema)
-const tasks = require("./task");
+const tasks = require("./Task");
 
 // Define a simple route
 app.get("/tm/tasks", async (req,res)=>{
@@ -21,12 +21,12 @@ app.get("/tm/tasks", async (req,res)=>{
   };
 });
 
-// Connect to the database and start the appl server
+// Connect to the database and start the node server
 (async function () {
   try {
     await connectDB();
-    app.listen(port, () => {console.log(`${appName} is listening on port ${port}.`)});
+    app.listen(port, () => console.log(`${appName} is listening on port ${port}.`));
   } catch (error) {
     console.log(error);
   };
-})();
+}) ();
